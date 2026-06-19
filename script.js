@@ -144,12 +144,59 @@ function openCard(index){
   selectedCardIndex = index;
   const card = cards[index];
 
-  document.getElementById("cardTitle").innerText =
-    card.type === "secret" ? "💜 Secret Wish" : "🎴 Couple Task";
+  const category = detectCategory(card.text, card.type);
 
+  document.getElementById("cardTitle").innerText = category.title;
   document.getElementById("cardText").innerText = card.text;
 
+  const revealed = document.querySelector(".revealed-card");
+  revealed.className = "revealed-card " + category.className;
+
   showScreen("result");
+}
+
+function detectCategory(text, type){
+  const t = text.toLowerCase();
+
+  if(type === "secret"){
+    return {
+      title:"💜 Secret Wish",
+      className:"secret-card"
+    };
+  }
+
+  if(t.includes("golden") || t.includes("double") || t.includes("special wish")){
+    return {
+      title:"👑 Golden Card",
+      className:"golden-card"
+    };
+  }
+
+  if(t.includes("buy") || t.includes("shopping") || t.includes("order") || t.includes("food")){
+    return {
+      title:"🎁 Reward Card",
+      className:"reward-card"
+    };
+  }
+
+  if(t.includes("challenge") || t.includes("take off") || t.includes("guess")){
+    return {
+      title:"⚡ Challenge Card",
+      className:"challenge-card"
+    };
+  }
+
+  if(t.includes("dance") || t.includes("laugh") || t.includes("propose") || t.includes("taste")){
+    return {
+      title:"😂 Fun Card",
+      className:"fun-card"
+    };
+  }
+
+  return {
+    title:"❤️ Romance Card",
+    className:"romance-card"
+  };
 }
 
 function completeTask(){

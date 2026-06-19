@@ -114,7 +114,7 @@ function createDeck(){
     used:false
   }));
 
-  cards = shuffle([...secretCards, ...systemCards]).slice(0,18);
+  cards = shuffle([...secretCards, ...systemCards]).slice(0,35);
 
   renderDeck();
   updateAll();

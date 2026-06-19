@@ -14,24 +14,29 @@
     <div class="logo">💜</div>
     <h1>Unspoken</h1>
     <p>Some things are easier to play than say.</p>
-    <button onclick="showScreen('player1')">Start Game</button>
+    <button onclick="showScreen('names')">Start Game</button>
     <small>18+ • Consent first • Skip is always allowed</small>
   </section>
 
+  <section class="screen" id="names">
+    <h2>Couple Setup</h2>
+    <input id="player1Name" placeholder="Player 1 name" />
+    <input id="player2Name" placeholder="Player 2 name" />
+    <input id="coupleName" placeholder="Couple name optional" />
+    <button onclick="saveNames()">Continue</button>
+  </section>
+
   <section class="screen" id="player1">
-    <h2>Player 1</h2>
+    <h2 id="p1Title">Player 1</h2>
     <p>Write your secret wishes. One per line.</p>
-    <textarea id="p1" placeholder="Example:
-Slow dance together
-Movie cuddle night
-Give me a surprise compliment"></textarea>
+    <textarea id="p1" placeholder="One wish per line..."></textarea>
     <button onclick="savePlayer1()">Save & Lock 🔒</button>
   </section>
 
   <section class="screen" id="player2">
-    <h2>Player 2</h2>
+    <h2 id="p2Title">Player 2</h2>
     <p>Now pass the phone. One wish per line.</p>
-    <textarea id="p2" placeholder="Your secret wishes..."></textarea>
+    <textarea id="p2" placeholder="One wish per line..."></textarea>
     <button onclick="savePlayer2()">Create Deck 🎴</button>
   </section>
 
@@ -39,11 +44,21 @@ Give me a surprise compliment"></textarea>
     <div class="topbar">
       <div>
         <p class="label">Current Turn</p>
-        <h3 id="turnName">Player 1</h3>
+        <h3 id="turnName">Player</h3>
       </div>
       <div class="scorebox">
-        <span>P1: <b id="p1Score">0</b></span>
-        <span>P2: <b id="p2Score">0</b></span>
+        <span id="score1">P1: 0</span>
+        <span id="score2">P2: 0</span>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-info">
+        <span id="progressText">0 / 18 Completed</span>
+        <span id="leftText">18 Left</span>
+      </div>
+      <div class="progress">
+        <div id="progressBar"></div>
       </div>
     </div>
 
@@ -65,8 +80,9 @@ Give me a surprise compliment"></textarea>
 
   <section class="screen" id="final">
     <div class="logo">🏆</div>
-    <h1>Game Over</h1>
-    <p id="winnerText"></p>
+    <h1>Night Complete</h1>
+    <p id="coupleFinal"></p>
+    <div class="final-box" id="finalStats"></div>
     <button onclick="restartGame()">Play Again</button>
   </section>
 

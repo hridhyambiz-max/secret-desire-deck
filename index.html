@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unspoken</title>
 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen active" id="welcome">
+
+    <h1>💜 Unspoken</h1>
+    <p>Some things are easier to play than say.</p>
+
+    <button onclick="showScreen('player1')">
+        Start Game
+    </button>
+
+</div>
+
+<div class="screen" id="player1">
+
+    <h2>Player 1 Setup</h2>
+
+    <textarea id="p1"
+    placeholder="Write one secret desire per line"></textarea>
+
+    <button onclick="savePlayer1()">
+        Save & Continue
+    </button>
+
+</div>
+
+<div class="screen" id="player2">
+
+    <h2>Player 2 Setup</h2>
+
+    <textarea id="p2"
+    placeholder="Write one secret desire per line"></textarea>
+
+    <button onclick="savePlayer2()">
+        Create Deck
+    </button>
+
+</div>
+
+<div class="screen" id="game">
+
+    <h2>Secret Deck</h2>
+
+    <div id="deck"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

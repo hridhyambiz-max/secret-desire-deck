@@ -71,6 +71,8 @@ function saveNames(){
   names.p1 = p1;
   names.p2 = p2;
   names.couple = couple || `${p1} ❤️ ${p2}`;
+  document.getElementById("coupleDisplay").innerText =
+  names.couple;
 
   localStorage.setItem("names", JSON.stringify(names));
 

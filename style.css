@@ -278,3 +278,12 @@ input::placeholder, textarea::placeholder{color:#aaa;}
   background:linear-gradient(145deg,#3b1b5f,#160b2b);
   box-shadow:0 0 45px rgba(212,156,255,.45);
 }
+.loser-options{
+  display:flex;
+  gap:12px;
+  margin-top:20px;
+}
+
+.loser-options button{
+  flex:1;
+}

@@ -338,6 +338,8 @@ function restartGame(){
   currentPlayer = 1;
   scores = { p1:0, p2:0 };
   selectedCardIndex = null;
+  loserName = "";
+loserTaskOptions = [];
 
   stats = {
     completed:0,

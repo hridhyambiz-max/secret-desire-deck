@@ -151,6 +151,12 @@ function renderDeck(){
 }
 
 function openCard(index){
+  const cardElements =
+document.querySelectorAll(".card");
+
+cardElements[index].classList.add("flip");
+
+setTimeout(()=>{
   selectedCardIndex = index;
   const card = cards[index];
 
@@ -162,7 +168,10 @@ function openCard(index){
   const revealed = document.querySelector(".revealed-card");
   revealed.className = "revealed-card " + category.className;
 
-  showScreen("result");
+ showScreen("result");
+
+},300);
+
 }
 
 function detectCategory(text, type){

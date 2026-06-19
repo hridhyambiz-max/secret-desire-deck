@@ -17,21 +17,30 @@ let names = {
 };
 
 const builtInCards = [
-  "Give your partner a genuine compliment.",
-  "Hold hands for 2 minutes.",
-  "Share one memory you love.",
-  "Dance together for 30 seconds.",
-  "Look into each other's eyes for 20 seconds.",
-  "Say one thing you never say enough.",
-  "Give your partner a warm hug.",
-  "Let your partner choose one small wish.",
-  "Tell your partner what you appreciate most.",
-  "Plan your next date idea together.",
-  "Play one romantic song.",
-  "Take a cute couple selfie.",
-  "Give your partner a surprise note.",
-  "Recreate your first chat line.",
-  "Ask one honest question."
+  "Kiss Your Partner for 3 Minutes Straight.",
+  "Kiss 10 of Your Partner's Favorite Body Parts.",
+  "Spend 3 Minutes Kissing Your Partner's Neck",
+  "Let your partner write his or her name on your butt.",
+  "Give Your Partner a Gentle Love Bite on the Neck.",
+  "Write your name on yours partner private part.",
+  "Get Down on One Knee and Propose to Me.",
+  "Dance With Me on a Romantic Song for 3 Minutes.",
+  "Close Your Partner's Eyes and Make Them Taste Something. They Must Guess What It Is; if They Guess Wrong, They Lose",
+  "Take Off Your Partner 1 Clothe Which Ever You Want To.",
+  "Give Your Partner a 2-Minute Foot Massage.",
+  "Make Your Partner Eye Close And lick Your Body Part And Your Partner Has To Guesses it if Wrong You Loss.",
+  "Give Your Partner a Full-Body Massage for 2 Minutes.",
+  "Buy Me a New Dress of My Choice.",
+  "Take Me on a Shopping Date Next Sunday.",
+  "Order My Favorite Food for Me Right Now.",
+  "Take off Your 1 Clothes.",
+  "Take off Your 1 Clothes.",
+  "Take off Your 1 Clothes.",
+  "Take off Your 1 Clothes.",
+  "Take off Your 1 Clothes.",
+  "Lie on Your Back While Your Partner Slowly Licks Every Part of Your Body from Head to Toe.",
+  "Your Have to Lick Your Partner's Private Part for 2 Minutes.",
+
 ];
 
 function showScreen(id){

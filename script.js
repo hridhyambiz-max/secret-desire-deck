@@ -318,7 +318,21 @@ function showFinal(){
     showScreen("final");
   }
 }
+function startLoserRound(){
+  loserTaskOptions = shuffle([...loserTasks]).slice(0,2);
 
+  document.getElementById("loserText").innerText =
+    `${loserName}, choose one final option.`;
+
+  showScreen("loserRound");
+}
+
+function chooseLoserTask(index){
+  document.getElementById("loserTaskText").innerText =
+    loserTaskOptions[index];
+
+  showScreen("loserTask");
+}
 function restartGame(){
   cards = [];
   currentPlayer = 1;

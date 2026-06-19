@@ -43,6 +43,14 @@ const builtInCards = [
 
 ];
 
+const loserTasks = [
+  "Get Blindfold and let Your Partner Do Whatever He/She want to.",
+  "Give Your Parnter Full Body Massage."
+];
+
+let loserTaskOptions = [];
+let loserName = "";
+
 function showScreen(id){
   document.querySelectorAll(".screen").forEach(screen=>{
     screen.classList.remove("active");

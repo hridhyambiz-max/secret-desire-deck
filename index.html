@@ -85,7 +85,24 @@
     <div class="final-box" id="finalStats"></div>
     <button onclick="restartGame()">Play Again</button>
   </section>
+<section class="screen" id="loserRound">
+  <div class="logo">🎭</div>
+  <h1>Loser Dare</h1>
+  <p id="loserText"></p>
 
+  <div class="loser-options">
+    <button onclick="chooseLoserTask(0)">Option A 🎴</button>
+    <button onclick="chooseLoserTask(1)">Option B 🎴</button>
+  </div>
+</section>
+
+<section class="screen" id="loserTask">
+  <h2>Final Task</h2>
+  <div class="revealed-card challenge-card">
+    <p id="loserTaskText"></p>
+  </div>
+  <button onclick="showScreen('final')">Done 💜</button>
+</section>
 </div>
 
 <script src="script.js"></script>

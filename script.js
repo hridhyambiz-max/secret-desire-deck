@@ -290,10 +290,13 @@ function showFinal(){
 
   if(scores.p1 > scores.p2){
     winner = `${names.p1} wins tonight 💜`;
+    loserName = names.p2;
   }else if(scores.p2 > scores.p1){
     winner = `${names.p2} wins tonight 💜`;
+    loserName = names.p1;
   }else{
     winner = "Perfect tie. You both matched the energy 💜";
+    loserName = "";
   }
 
   document.getElementById("coupleFinal").innerText =
@@ -309,7 +312,11 @@ function showFinal(){
     System Tasks Completed: ${stats.systemCompleted}
   `;
 
-  showScreen("final");
+  if(loserName){
+    startLoserRound();
+  }else{
+    showScreen("final");
+  }
 }
 
 function restartGame(){

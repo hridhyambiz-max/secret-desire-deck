@@ -392,3 +392,15 @@ input::placeholder, textarea::placeholder{color:#b9abc9;}
   color:#cdb9de;
   margin-top:4px;
 }
+.silhouette-bg{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.05;
+  font-size:380px;
+  filter:blur(6px);
+}

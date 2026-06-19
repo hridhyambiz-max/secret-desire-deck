@@ -392,3 +392,11 @@ input::placeholder, textarea::placeholder{color:#b9abc9;}
   color:#cdb9de;
   margin-top:4px;
 }
+.age-tag{
+  color:#d49cff;
+  font-weight:700;
+  font-size:15px;
+  margin-bottom:10px;
+  letter-spacing:.5px;
+  text-shadow:0 0 12px rgba(212,156,255,.35);
+}

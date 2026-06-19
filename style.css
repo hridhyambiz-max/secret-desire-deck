@@ -340,3 +340,24 @@ input::placeholder, textarea::placeholder{color:#b9abc9;}
   .card{height:105px;}
   #cardText{font-size:21px;}
 }
+.couple-header{
+  text-align:center;
+  margin-bottom:18px;
+  padding:16px;
+  border-radius:20px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+#coupleDisplay{
+  font-size:22px;
+  font-weight:700;
+  color:#f5ddff;
+}
+
+.couple-subtitle{
+  font-size:12px;
+  color:#cdb9de;
+  margin-top:4px;
+}

@@ -1,1 +1,22 @@
-
+{
+  "name": "Unspoken",
+  "short_name": "Unspoken",
+  "description": "18+ Romantic Couple Game",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#160b2b",
+  "theme_color": "#160b2b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/Logo-15.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Logo-15.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

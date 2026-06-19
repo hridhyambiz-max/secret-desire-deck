@@ -249,3 +249,32 @@ input::placeholder, textarea::placeholder{color:#aaa;}
   .card{height:105px;}
   #cardText{font-size:21px;}
 }
+.romance-card{
+  background:linear-gradient(145deg,#3b1233,#1a0b1d);
+  box-shadow:0 0 35px rgba(255,105,180,.35);
+}
+
+.fun-card{
+  background:linear-gradient(145deg,#12364a,#071b26);
+  box-shadow:0 0 35px rgba(80,200,255,.32);
+}
+
+.reward-card{
+  background:linear-gradient(145deg,#183b25,#071d10);
+  box-shadow:0 0 35px rgba(90,255,160,.28);
+}
+
+.challenge-card{
+  background:linear-gradient(145deg,#4a2412,#1f0d05);
+  box-shadow:0 0 35px rgba(255,150,60,.35);
+}
+
+.golden-card{
+  background:linear-gradient(145deg,#5a430d,#1f1604);
+  box-shadow:0 0 45px rgba(255,215,80,.45);
+}
+
+.secret-card{
+  background:linear-gradient(145deg,#3b1b5f,#160b2b);
+  box-shadow:0 0 45px rgba(212,156,255,.45);
+}

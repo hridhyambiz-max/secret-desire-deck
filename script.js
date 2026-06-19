@@ -39,7 +39,7 @@ const builtInCards = [
   "Take off Your 1 Clothes.",
   "Take off Your 1 Clothes.",
   "Lie on Your Back While Your Partner Slowly Licks Every Part of Your Body from Head to Toe.",
-  "Your Have to Lick Your Partner's Private Part for 2 Minutes.",
+  "Your Have to Lick Your Partner's Private Part for 2 Minutes."
 
 ];
 
